@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EX6</title>
+    <style>
+        #titl{
+            position:absolute;
+            left: 40%;
+            top:0%;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titl">Students Database</h1><br><br><br><hr>    
+    <!--Invoke marklist1 servlet to display all the students' marks-->
+    <a style="text-decoration: none;color:black;font-weight:bolder" href="ex7_1.jsp">Display all students' marks</a>
+    <hr>
+    <!-- On submit invoke marklist2 servlet to display mark details of specific dept students-->
+    <h3>View Department Specific Mark Details</h3>
+    <form action="ex7_2.jsp">
+        <!--Drop down selection-->
+        <label for="course">Department</label>
+        <select id="course" name="course">
+        <option value="CSE">COMPUTER SCIENCE AND ENGINEERING</option>
+        <option value="ECE">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+        <option value="MECH">MECHANICAL ENGINEERING</option>
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT"/>
+    </form>
+    <form action="ex7_3.jsp">
+        <h3>Insert Student Details</h3>
+        <input type="text" name="Name" placeholder="Name">
+        <input type="text" name="RegNo" placeholder="Register Number">
+        <input type="text" name="Dept" placeholder="Department">
+        <input type="text" name="CGPA" placeholder="CGPA">
+        <input type="text" name="Scholarship" placeholder="Scholarship">
+        <input type="submit" value="SUBMIT"/>
+        <br>
+        <br>
+    </form>
+
+    <form action="ex7_4.jsp">
+        <h3>Delete a student record</h3>
+        <input type="text" name="RegNo">
+        <input type="submit" value="SUBMIT">
+        <br>
+    </form>
+</body>
+</html>
