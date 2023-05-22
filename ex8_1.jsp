@@ -3,11 +3,16 @@
     <head>
         <style>
             body{
-                background-color: aqua;
+                background-color: rgb(13, 33, 87);
                 color: black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
             input{
-                width: 30%;
+                min-width: 20vw;
+                padding: 2%;
                 font-size: large;
                 border-top-left-radius: 5%;
                 border-top-right-radius: 5%;
@@ -15,6 +20,9 @@
                 border-bottom-right-radius: 5%;
                 background-color: rgb(224, 230, 144);
                 border: solid black;
+            }
+            h1{
+                color: white;
             }
         </style>
     </head>
@@ -42,7 +50,7 @@
                     <input type="hidden" name="pass" value="<%=password%>">
                     </form><br><br>
                     <form action="search.jsp">
-                            <input type="submit" value="Search Movies">
+                            <input type="submit" value="Search Players">
                     <input type="hidden" name="user" value="<%=username%>">
                     <input type="hidden" name="pass" value="<%=password%>">
                     </form><br><br>

@@ -3,9 +3,13 @@
     <head>
         <style>
             body{
-                background-color: aqua;
+                background-color: rgb(9, 28, 88);
+            }
+            h1,h3{
+                color: white;
             }
         </style>
+
     </head>
     <body>
         <%

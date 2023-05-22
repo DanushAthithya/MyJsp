@@ -2,7 +2,14 @@
     <head>
         <style>
             body{
-                background-color: aqua;
+                background-color: rgb(17, 44, 101);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            h1{
+                color: white;
             }
             [type='submit']{
                 border-top-left-radius: 5%;
@@ -17,8 +24,8 @@
     <body>
         <form action="ex8_1.jsp" method="get">
             <h1>Login</h1>
-            <label for="user">Username:<input type="text" name="user" id="user"></label><br>
-            <label for="pass">Password:<input type="password" name="pass" id="pass"></label><br>
+            <label for="user">Username:<input type="text" name="user" id="user"></label><br><br>
+            <label for="pass">Password:<input type="password" name="pass" id="pass"></label><br><br>
             <input type="submit">
             <br><br>
             <!-- <p>username:Danush19 password:athijudo</p> -->

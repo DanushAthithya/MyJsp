@@ -2,10 +2,16 @@
     <head>
         <style>
             body{
-                background-color: aqua;
+                background-color: rgb(22, 37, 96);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: white;
             }
             input{
-                width: 30%;
+                min-width: 20vw;
+                padding: 2%;
                 border: solid black;
             }
             [type='submit']{
@@ -20,8 +26,8 @@
     <body>
         <form action="ex8_2.jsp" method="get">
             <label for="movie">
-                Movie Name:
-                <input type="text" name="movie" id="movie"><br><br>
+                Player Name:
+                <input type="text" name="name" id="movie"><br><br>
             </label>
             <input type="submit">
             <br><br>
